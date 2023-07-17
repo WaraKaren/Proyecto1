@@ -12,17 +12,19 @@
   <header>
     <h1> ANALIZADOR DE TEXTO</h1>
   </header>
+  <aside>
+    <ul>
+      <li data-testid="word-count">PALABRAS</li>
+      <li data-testid="character-count">CARACTERES</li>
+      <li data-testid="character-no-spaces-count">CARACTERES SIN ESPCIOS Y SIGNOS DE PUNTUACION</li>
+      <li data-testid="number-count">NUMEROS</li>
+      <li data-testid="number-sum"> SUMA DE NUMEROS</li>
+      <li data-testid="word-length-average">PROMEDIO LONGITUD</li>
+    </ul>
+  </aside>
   <form>
-    <p>
-      CARACTERES <br>
-      CARACTERES SIN ESPACIO <br>
-      PALABRAS <br>
-      NUMEROS <br>
-      SUMA DE NUMEROS<br>
-      PROMEDIO LONGITUD
-    </p>
     <label>REALIZA UN TEXTO</label>
-    <input placeholder="INGRESA TU TEXTO AQUI" />
+    <textarea name="Ingrasa tu texto aqui" placeholder="ingresa tu texto"></textarea>
     <button type="reset">LIMPIAR</button>
   </form>
   <footer>
