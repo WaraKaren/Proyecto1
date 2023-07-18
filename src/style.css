@@ -1,15 +1,57 @@
 body {
   background-color: #F7B4A7;
 }
-header{
-background-color:  #94DDDE;
-color: #3b3f46;
-font-family: sans-serif;
+
+header h1 {
+  border-width: 5px;
+  background-color: #94DDDE;
+  color: #2B4B82;
+  font-family: sans-serif;
 }
-textarea{
-    background-color:  #F0ABC1;
+
+.carp {
+  border-width: 1px;
+  background-color: #2B4B82;
 }
+
+.carc {
+  border-width: 1px;
+  background-color: #2B4B82;
+}
+
+.carsin {
+  border-width: 12px padding: 30px width: 200px
+}
+
+.carn {
+  border-width: 5px;
+  border-color: #000;
+  background-color: #2B4B82;
+}
+
+.cars {
+  border-width: 1px;
+  background-color: #2B4B82;
+}
+
+.carl {
+  border-width: 1px;
+  background-color: #2B4B82;
+}
+
+textarea[name="texto"] {
+  /*no comprendo lo que realiza el los selecores de atributo*/
+  border-width: 1px;
+  background-color: #F0ABC1;
+}
+
 /*boton de limpiar*/
-button{
-    background-color:  #94DDDE;
+#reset-button {
+  border-width: 1px;
+  background-color: #94DDDE;
+}
+
+footer {
+  border-width: 1px;
+  background-color: #94DDDE
 }
