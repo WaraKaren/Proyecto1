@@ -1,57 +1,76 @@
+/*color de fondo*/
 body {
-  background-color: #F7B4A7;
+  background-image: radial-gradient(circle, #051937, #49375a, #885a77, #c38390, #f7b4a7);
+  /*background-color: #F7B4A7;*/
 }
 
+/* encabezado */
 header h1 {
-  border-width: 5px;
+  /* Borde sólido de 5 píxeles */
+  border: 5px solid #000000;
+  /*agregamos radios border para volverlo redondo las esquinas*/
+  border-radius: 15px 15px 15px 15px;
+  /*color de fondo del texto*/
   background-color: #94DDDE;
+  /*color de texto*/
+  margin: auto;
   color: #2B4B82;
   font-family: sans-serif;
 }
 
-.carp {
-  border-width: 1px;
+/*li*/
+.palabra {
+  border: 3px solid #000000;
+  border-radius: 20px;
   background-color: #2B4B82;
 }
 
-.carc {
-  border-width: 1px;
+.caracter {
+  border: 3px solid #000000;
+  border-radius: 20px;
   background-color: #2B4B82;
 }
 
-.carsin {
-  border-width: 12px padding: 30px width: 200px
-}
-
-.carn {
-  border-width: 5px;
-  border-color: #000;
+.sin {
+  border: 3px solid #000000;
+  border-radius: 20px;
   background-color: #2B4B82;
 }
 
-.cars {
-  border-width: 1px;
+.numero {
+  border: 3px solid #000000;
+  border-radius: 20px;
   background-color: #2B4B82;
 }
 
-.carl {
-  border-width: 1px;
+.suma {
+  border: 3px solid #000000;
+  border-radius: 20px;
   background-color: #2B4B82;
 }
 
+.tam {
+  border: 3px solid #000000;
+  border-radius: 20px;
+  background-color: #2B4B82;
+}
+
+/* Estilos para area de texto */
 textarea[name="texto"] {
-  /*no comprendo lo que realiza el los selecores de atributo*/
-  border-width: 1px;
+  border: 5px solid #000000;
+  border-radius: 10px;
   background-color: #F0ABC1;
 }
 
-/*boton de limpiar*/
+/* Estilos para el botón de limpiar */
 #reset-button {
-  border-width: 1px;
+  border: 3px solid #000000;
+  border-radius: 10px;
   background-color: #94DDDE;
 }
 
+/* Estilos para el pie de página */
 footer {
-  border-width: 1px;
-  background-color: #94DDDE
+  border: 1px solid #ccc;
+  background-color: #94DDDE;
 }
