@@ -1,11 +1,12 @@
 /*color de fondo*/
 body {
   background-image: radial-gradient(circle, #051937, #49375a, #885a77, #c38390, #f7b4a7);
-  /*background-color: #F7B4A7;*/
+    /*background-color: #F7B4A7;*/
 }
 
 /* encabezado */
-header h1 {
+h1 {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   /* Borde sólido de 5 píxeles */
   border: 5px solid #000000;
   /*agregamos radios border para volverlo redondo las esquinas*/
@@ -13,50 +14,86 @@ header h1 {
   /*color de fondo del texto*/
   background-color: #94DDDE;
   /*color de texto*/
-  margin: auto;
+  margin: 15px 60px 15px 60px;
+  text-align: center;
   color: #2B4B82;
-  font-family: sans-serif;
 }
 
 /*li*/
-.palabra {
-  border: 3px solid #000000;
+.lis{
+  list-style-type: none; /*para quitar los puntitos de la <li>*/
+  border: 2px solid #000000;
   border-radius: 20px;
-  background-color: #2B4B82;
+  background-color: #94DDDE;
+  
+  margin : auto;
+  padding: 0px 15px 0px 15px;
 }
 
-.caracter {
+[data-testid="word-count"] {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 20px;
   background-color: #2B4B82;
+  background-position: right;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
 
-.sin {
+[data-testid="character-count"] {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 20px;
   background-color: #2B4B82;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
 
-.numero {
+[data-testid="character-no-spaces-count"] {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 20px;
   background-color: #2B4B82;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
 
-.suma {
+[data-testid="number-count"] {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 20px;
   background-color: #2B4B82;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
 
-.tam {
+[data-testid="number-sum"] {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 20px;
   background-color: #2B4B82;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+}
+
+[data-testid="word-length-average"]{
+  font-family: 'Share Tech Mono', monospace, sans-serif;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  background-color: #2B4B82;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
 }
 
 /* Estilos para area de texto */
-textarea[name="texto"] {
+textarea{
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 5px solid #000000;
   border-radius: 10px;
   background-color: #F0ABC1;
@@ -64,13 +101,18 @@ textarea[name="texto"] {
 
 /* Estilos para el botón de limpiar */
 #reset-button {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 10px;
   background-color: #94DDDE;
 }
 
-/* Estilos para el pie de página */
+/* Estilos para abajo*/
 footer {
+  font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 1px solid #ccc;
   background-color: #94DDDE;
+}
+
+*{  font-family: 'Share Tech Mono', monospace, sans-serif;
 }

@@ -2,36 +2,85 @@
 <html>
 
 <head>
+  <!-- le indica al navegador que use el formato UTF-8 para interpretar los caracteres de la página HTML.
+  Esto asegura que el texto en diferentes idiomas, como español, se muestre correctamente. -->
   <meta charset="utf-8">
   <title>Analizador de texto proyecto 1</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <script src="index.js" type="module"></script>
   <header>
-    <h1> ANALIZADOR DE TEXTO</h1>
+    <h1>Analizador de texto</h1>
   </header>
-  <aside>
-    <ul>
-      <li class="palabra" data-testid="word-count">PALABRAS</li>
-      <li class="caracter" data-testid="character-count">CARACTERES</li>
-      <li class="sin" data-testid="character-no-spaces-count">CARACTERES SIN ESPCIOS Y SIGNOS DE PUNTUACION</li>
-      <li class="numero" data-testid="number-count">NUMEROS</li>
-      <li class="suma" data-testid="number-sum"> SUMA DE NUMEROS</li>
-      <li class="tam" data-testid="word-length-average">PROMEDIO LONGITUD</li>
+  <section>
+    <ul class="lis">
+      <li data-testid="word-count">PALABRAS: </li>
+      <li data-testid="character-count">CARACTERES: </li>
+      <li data-testid="character-no-spaces-count">CARACTERES SIN ESPACIOS: </li>
+      <li data-testid="number-count">NUMEROS: </li>
+      <li data-testid="number-sum">SUMA DE NUMEROS: </li>
+      <li data-testid="word-length-average">PROMEDIO LONGITUD: </li>
     </ul>
-  </aside>
+  </section>
   <form>
     <label>
       REALIZA UN TEXTO
     </label>
-    <textarea name="texto" placeholder="ingresa tu texto"></textarea>
-    <button type="reset" id="reset-button">LIMPIAR</button>
+    <!-- El atributo "name" en el campo de texto ("<textarea>")
+      le da un nombre especial dentro del formulario.
+      Esto ayuda a identificarlo cuando el usuario envía
+      la información al servidor.
+      Es como darle un nombre único para que pueda ser encontrado
+      y utilizado más fácilmente. -->
+    <textarea name="user-input" placeholder="ingresa tu texto"></textarea>
+    <button id="reset-button">LIMPIAR</button>
   </form>
-  <footer>
-    <h5>Autora: Wara Karen Pacajes Mamani</h5>
-  </footer>
+  <script src="index.js" type="module"></script>
 </body>
+<footer>
+  <p>Realizado por Wara Karen Pacajes Mamani</p>
+</footer>
 
 </html>
+
+
+<!-- <!DOCTYPE html>
+  <html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Analizador de texto proyecto 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <script src="index.js" type="module"></script>
+    <header>
+      <h1> ANALIZADOR DE TEXTO</h1>
+    </header>
+    <aside>
+      <ul>
+        <li class="palabra" data-testid="word-count">PALABRAS</li>
+        <li class="caracter" data-testid="character-count">CARACTERES</li>
+        <li class="sin" data-testid="character-no-spaces-count">CARACTERES SIN ESPCIOS Y SIGNOS DE PUNTUACION</li>
+        <li class="numero" data-testid="number-count">NUMEROS</li>
+        <li class="suma" data-testid="number-sum"> SUMA DE NUMEROS</li>
+        <li class="tam" data-testid="word-length-average">PROMEDIO LONGITUD</li>
+      </ul>
+    </aside>
+    <form>
+      <label>
+        REALIZA UN TEXTO
+      </label>
+      <textarea name="user-input" placeholder="ingresa tu texto"></textarea>
+      <button id="reset-button">LIMPIAR</button>
+    </form>
+    <footer>
+      <h5>Realizado por Wara Karen Pacajes Mamani</h5>
+    </footer>
+  </body>
+  </html> -->
