@@ -5,7 +5,9 @@
 seleccione el primero que se le aparesca es que se utiliza los corchetes[]
 especificando que se busca un textare que tenga name=user-input*/
 const textArea = document.querySelector('[name="user-input"]');
-
+//con addEventListener se asigana una acion luego de obtner una respuesta
+textArea.addEventListener('keyup'texto)
+console.log(textArea);
 //varibles declaradas de las li
 const wordCount = document.querySelector('[data-testid="word-count"]');
 const characterCount = document.querySelector('[data-testid="character-count"]');
