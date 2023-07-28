@@ -11,21 +11,19 @@ const wordLengthAverage = document.querySelector('[data-testid="word-length-aver
 const resetButton = document.getElementById("reset-button");
 //funcion para textarea utilizando la variable que le asignamos anteriormente userInput
 userInput.addEventListener('keyup', function () {
-  const savedText = userInput.value;
-  //split(/\s+/\) hara la separacion por palabras en savedText
-  const words = savedText.split(/\s+/).filter(function (aloneWord) {
-    return aloneWord !== '';
-    /*a el metodo filter se le da un funcion de !== diferencias
-    en espacios si tiene espacio es falso por que igual a vacio''
-    todo esto de almacena en la const words*/
-  });
+    const savedText = userInput.value;
+    //split(/\s+/\) hara la separacion por palabras en savedText
+    const words = savedText.split(/\s+/).filter(function (aloneWord) {
+        return aloneWord !== '';
+        /*a el metodo filter se le da un funcion de !== diferencias
+        en espacios si tiene espacio es falso por que igual a vacio''
+        todo esto de almacena en la const words*/
+    });
     //metricas de cada li
-  wordCount.textContent = `PALABRAS: ${words.length}`;
-  characterCount.textContent = `CARACTERES: ${savedText.length}`;
-  /*const diferente = savedText.filter(function(ultimo){
-    return words !=='';          no funciono*/
-});
-  characterNoSpacesCount.textContent = `CARACTERES SIN ESPACIOS: ${diferente.length}`;
+    wordCount.textContent = `PALABRAS: ${words.length}`;
+    characterCount.textContent = `CARACTERES: ${savedText.length}`;
+    });
+
 });
 
 
