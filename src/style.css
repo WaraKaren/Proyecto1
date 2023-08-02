@@ -5,24 +5,23 @@ body {
 }
 
 /* encabezado */
-h1 {
+header {
   font-family: 'Share Tech Mono', monospace, sans-serif;
   /* Borde sólido de 5 píxeles */
   border: 5px solid #000000;
   /*agregamos radios border para volverlo redondo las esquinas*/
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 12px 12px 12px 12px;
   /*color de fondo del texto*/
   background-color: #94DDDE;
   /*color de texto*/
-  margin: 15px 60px 15px 60px;
+  margin: 0px 60px 5px 60px;
   text-align: center;
   color: #2B4B82;
 }
 
-/*li*/
-.lis {
+/*ul*/
+/*.desordenado {
   list-style-type: none;
-  /*para quitar los puntitos de la <li>*/
   border: 2px solid #000000;
   border-radius: 20px;
   background-color: #94DDDE;
@@ -30,20 +29,24 @@ h1 {
   padding: 0px 15px 0px 15px;
   width: 300px;
   height: auto;
-}
+}*/
 
-[data-testid="word-count"] {
+.estilo {
   font-family: 'Share Tech Mono', monospace, sans-serif;
+  color: beige;
   border: 3px solid #000000;
   border-radius: 20px;
   background-color: #2B4B82;
-  background-position: right;
+  background-position: center;
   text-align: center;
+  list-style-type: none;
+  margin: 5px 150px 5px 440px;
   padding: 10px;
-  margin: 5px;
+  width: 300px;
+  height: auto;
 }
 
-[data-testid="character-count"] {
+/*[data-testid="character-count"] {
   font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 3px solid #000000;
   border-radius: 20px;
@@ -91,20 +94,23 @@ h1 {
   text-align: center;
   padding: 10px;
   margin: 5px;
-}
+}*/
 
 /* Estilos para area de texto */
-textarea {
+/*#text */
+textarea[name="user-input"] {
   font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 5px solid #000000;
   border-radius: 10px;
-  background-color: #F0ABC1;
-  margin:10px 50px 20px 250px;
+  background-color: #f0abc1;
+  margin: 5px 150px 5px 225px;
   width: 500px;
-  height: 150px;
+  height: 85px;
   resize: none;
+  padding: 0px 15px 0px 15px;
   text-align: center;
 }
+
 
 /* Estilos para el botón de limpiar */
 #reset-button {
@@ -113,6 +119,7 @@ textarea {
   border-radius: 10px;
   background-color: #94DDDE;
   padding: 10px;
+  margin: 5px 150px 5px 610px;
 }
 
 /* Estilos para abajo*/
@@ -120,9 +127,11 @@ footer {
   font-family: 'Share Tech Mono', monospace, sans-serif;
   border: 1px solid #ccc;
   background-color: #94DDDE;
-  justify-content: end;
+  justify-content: center;
+  text-align: center;
 }
 
 * {
   font-family: 'Share Tech Mono', monospace, sans-serif;
+
 }
