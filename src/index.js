@@ -54,7 +54,7 @@ userInput.addEventListener('keyup', function () {
 
   characterCount.textContent = `TODOS LOS CARACTERES: ${analyzer.getCharacterCount(savedText)}`;
   characterNoSpacesCount.textContent = `CARACTERES SIN ESPACIOS Y SIGNOS DE PUNTUACION: ${analyzer.getCharacterCountExcludingSpaces(savedText)}`;
-  numberCount.textContent = `NUMEROS: ${analyzer.getNumbersCount(savedText)}`;
+  numberCount.textContent = `NUMEROS: ${analyzer.getNumberCount(savedText)}`;
   numberSum.textContent = `SUMA DE NUMEROS: ${numberSumValue}`;
   //para calcular la longitud
   if (words.length > 0) {
