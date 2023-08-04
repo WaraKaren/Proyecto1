@@ -33,4 +33,6 @@ Observa los resultados de los análisis debajo del cuadro de texto.
 Utiliza el botón de reinicio si deseas eliminar el texto y los conteos actuales.
 
 ### Instalación
-No se requiere instalación para utilizar el Analizador de Texto, simplemente accede al sitio web en el siguiente enlace: Enlace al Analizador de Texto.
+No se requiere instalación para utilizar el Analizador de Texto, simplemente accede al sitio web en el siguiente enlace:
+[Enlace al proyecto](https://warakaren.github.io/src/)
+
